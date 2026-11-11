@@ -1,0 +1,47 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;width:1400px;height:860px;background:#F7F5F1;font-family:"PingFang SC","Helvetica Neue",sans-serif;color:#20242B;}
+  .top{height:72px;display:flex;align-items:center;padding:0 40px;border-bottom:1px solid #E6E2DA;}
+  .logo{font-size:22px;font-weight:600;letter-spacing:.02em}
+  .sub{font-size:15px;color:#9A958C;margin-left:14px}
+  .tabs{margin-left:44px;display:flex;gap:8px}
+  .tab{font-size:17px;padding:8px 20px;border-radius:8px;color:#4C525C}
+  .tab.on{background:#2E6BE6;color:#fff;font-weight:600}
+  .badge{margin-left:auto;font-size:14px;color:#B4703A;border:1px solid #E3C6A8;background:#FBF4EC;padding:7px 14px;border-radius:6px}
+  .body{padding:26px 40px}
+  .cap{font-size:15px;color:#8E8A81;margin:0 0 12px 2px}
+  table{width:100%;border-collapse:collapse;font-size:16px}
+  th{text-align:left;font-weight:500;color:#8E8A81;font-size:14px;padding:12px 10px;border-bottom:1px solid #E6E2DA}
+  td{padding:15px 10px;border-bottom:1px solid #EFEBE4}
+  .num{font-variant-numeric:tabular-nums}
+  .bar{width:300px;height:9px;border-radius:5px;background:#EDEAE3;overflow:hidden}
+  .bar i{display:block;height:100%;background:#2E6BE6;border-radius:5px}
+  .foot{position:absolute;right:40px;bottom:16px;font-size:13px;color:#A9A49B}
+  .gap{height:34px}
+</style></head><body>
+<div class="top">
+  <span class="logo">地推管理</span><span class="sub">结构示例 · 数据为示意</span>
+  <div class="tabs"><div class="tab">地图</div><div class="tab on">数据表</div><div class="tab">录入</div></div>
+  <div class="badge">示例数据 · 非真实客户</div>
+</div>
+<div class="body">
+  <p class="cap">按人 / 按点位 / 按时间</p>
+  <table>
+    <tr><th style="width:150px">组员</th><th>接触</th><th>留联系</th><th>约下一步</th><th>成交</th><th>转化率</th><th style="width:330px">月目标进度</th></tr>
+    <tr><td>组员 A</td><td class="num">126</td><td class="num">34</td><td class="num">11</td><td class="num">4</td><td class="num">3.2%</td><td><div class="bar"><i style="width:78%"></i></div></td></tr>
+    <tr><td>组员 B</td><td class="num">98</td><td class="num">21</td><td class="num">6</td><td class="num">2</td><td class="num">2.0%</td><td><div class="bar"><i style="width:52%"></i></div></td></tr>
+    <tr><td>组员 C</td><td class="num">74</td><td class="num">19</td><td class="num">8</td><td class="num">3</td><td class="num">4.1%</td><td><div class="bar"><i style="width:92%"></i></div></td></tr>
+  </table>
+  <div class="gap"></div>
+  <p class="cap">按点位（近 30 天）</p>
+  <table>
+    <tr><th style="width:220px">点位</th><th>接触</th><th>留联系</th><th>成交</th><th>最近一次</th></tr>
+    <tr><td>点位 P-03</td><td class="num">120</td><td class="num">28</td><td class="num">3</td><td>今天</td></tr>
+    <tr><td>点位 P-07</td><td class="num">86</td><td class="num">17</td><td class="num">1</td><td>2 天前</td></tr>
+    <tr><td>点位 P-01</td><td class="num">54</td><td class="num">9</td><td class="num">0</td><td>5 天前</td></tr>
+  </table>
+</div>
+<div class="foot">示意模板 · 客户数据已替换为假数据 · 点位为占位符</div>
+</body></html>

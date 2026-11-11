@@ -1,0 +1,46 @@
+[
+  {
+    "date": "2026-11-09",
+    "point_id": "P-01",
+    "owner": "组员A",
+    "reached": 12,
+    "leads": 3,
+    "deals": 0,
+    "intent": "低",
+    "next_step": "隔两天回访",
+    "raw": "示例：P-01 聊了12个 留了3个 意向偏低 隔两天再去"
+  },
+  {
+    "date": "2026-11-11",
+    "point_id": "P-02",
+    "owner": "组员A",
+    "reached": 4,
+    "leads": 2,
+    "deals": 1,
+    "intent": "中",
+    "next_step": "周六上午再约一次",
+    "raw": "示例：P-02 聊了4个 加了2个微信 成一个 周六上午再约"
+  },
+  {
+    "date": "2026-11-11",
+    "point_id": "P-03",
+    "owner": "组员B",
+    "reached": 18,
+    "leads": 5,
+    "deals": 1,
+    "intent": "高",
+    "next_step": "周一带资料上门",
+    "raw": "示例：P-03 人流量大 聊了18个 5个留了联系方式 一个当场定 周一带资料过去"
+  },
+  {
+    "date": "2026-11-10",
+    "point_id": "P-06",
+    "owner": "组员C",
+    "reached": 9,
+    "leads": 1,
+    "deals": 0,
+    "intent": "中",
+    "next_step": "等对方回复",
+    "raw": "示例：P-06 9个 只留了1个 说考虑一下"
+  }
+]

@@ -1,0 +1,56 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+html,body{margin:0;background:#EDEAE3;font-family:"PingFang SC","Helvetica Neue",sans-serif;}
+.phone{width:900px;height:1200px;margin:0 auto;background:#F2F1EE;position:relative;overflow:hidden;}
+.top{height:110px;background:#2E6BE6;color:#fff;display:flex;align-items:flex-end;justify-content:space-between;padding:0 34px 20px;box-sizing:border-box;}
+.top .name{font-size:32px;font-weight:600;}
+.top .tag{font-size:22px;opacity:.85;}
+</style></head><body>
+<div class="phone">
+  <div class="top"><div class="name">确认卡</div><div class="tag">待确认</div></div>
+  <svg width="900" height="1090" viewBox="0 0 900 1090">
+    <rect x="30" y="40" width="840" height="700" rx="22" fill="#fff"/>
+    <rect x="30" y="40" width="840" height="8" rx="4" fill="#2E6BE6"/>
+
+    <text x="66" y="104" font-size="24" fill="#8A8478">语音转写而来，逐项核对</text>
+
+    <!-- 行 -->
+    <g font-size="26">
+      <text x="66" y="176" fill="#9A948A">日期</text><text x="250" y="176" fill="#3D434B">6 月 12 日 下午</text>
+      <text x="66" y="244" fill="#9A948A">点位</text><text x="250" y="244" fill="#3D434B">示例点位（P-02）</text>
+      <text x="66" y="312" fill="#9A948A">触达</text><text x="250" y="312" fill="#3D434B">4 位客户</text>
+      <text x="66" y="380" fill="#9A948A">留资</text><text x="250" y="380" fill="#3D434B">2 个微信</text>
+      <text x="66" y="448" fill="#9A948A">意向</text><text x="250" y="448" fill="#3D434B">中 · 提到周末有空</text>
+      <text x="66" y="516" fill="#9A948A">下一步</text><text x="250" y="516" fill="#3D434B">周六上午再约一次</text>
+    </g>
+    <g font-size="20" fill="#2E6BE6"><text x="790" y="176">改</text><text x="790" y="244">改</text><text x="790" y="312">改</text><text x="790" y="380">改</text></g>
+
+    <!-- 改动痕迹 -->
+    <rect x="470" y="286" width="150" height="40" rx="10" fill="#EAF1FF"/>
+    <text x="486" y="314" font-size="20" fill="#2E6BE6">原为 3</text>
+
+    <g stroke="#EFEBE2" stroke-width="2">
+      <line x1="66" y1="204" x2="834" y2="204"/><line x1="66" y1="272" x2="834" y2="272"/>
+      <line x1="66" y1="340" x2="834" y2="340"/><line x1="66" y1="408" x2="834" y2="408"/>
+      <line x1="66" y1="476" x2="834" y2="476"/></g>
+
+    <text x="66" y="596" font-size="22" fill="#9A948A">确认之后才写入，改之前库里没有这条。</text>
+    <text x="66" y="632" font-size="22" fill="#9A948A">识别错的字，在这一步就能看出来。</text>
+
+    <!-- 按钮 -->
+    <rect x="66" y="650" width="240" height="72" rx="36" fill="#F0EEE8"/>
+    <text x="186" y="696" font-size="26" fill="#5B6068" text-anchor="middle">返回重录</text>
+    <rect x="336" y="650" width="300" height="72" rx="36" fill="#2E6BE6"/>
+    <text x="486" y="696" font-size="26" fill="#fff" text-anchor="middle">确认入库</text>
+
+    <!-- 小注脚 -->
+    <text x="66" y="812" font-size="21" fill="#B4AEA3">示意图。字段与内容均为虚构。</text>
+
+    <!-- 底部提示条 -->
+    <rect x="30" y="880" width="840" height="150" rx="18" fill="#F0EEE8"/>
+    <text x="66" y="936" font-size="24" fill="#5B6068">为什么非要人点一下</text>
+    <text x="66" y="976" font-size="22" fill="#8A8478">语音一定会错。错在卡片上看得见，</text>
+    <text x="66" y="1008" font-size="22" fill="#8A8478">错在库里要几天后对账才发现。</text>
+  </svg>
+</div>
+</body></html>

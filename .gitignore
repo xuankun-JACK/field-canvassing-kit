@@ -1,0 +1,14 @@
+data/
+*.csv
+!samples/*.csv
+_private/
+map.html
+*.jsonl
+*.local.json
+.env
+.env.*
+node_modules/
+*.db
+*.sqlite
+__pycache__/
+.DS_Store

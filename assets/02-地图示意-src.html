@@ -1,0 +1,100 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+html,body{margin:0;background:#F4F1EC;font-family:"PingFang SC","Helvetica Neue",sans-serif;}
+.stage{width:1600px;height:1000px;position:relative;overflow:hidden;background:#F7F4EC;}
+.badge{position:absolute;right:26px;top:22px;background:#FCFBF8;border:1px solid #D7D1C5;border-radius:8px;padding:8px 14px;font-size:15px;color:#8A8478;}
+</style></head><body>
+<div class="stage">
+<svg width="1600" height="1000" viewBox="0 0 1600 1000">
+<!-- 地图底 -->
+<rect x="340" y="0" width="1260" height="1000" fill="#F2EEE3"/>
+<g fill="#E9E3D5">
+<rect x="380" y="60" width="220" height="180" rx="10"/><rect x="640" y="60" width="300" height="140" rx="10"/>
+<rect x="380" y="290" width="180" height="240" rx="10"/><rect x="600" y="250" width="260" height="200" rx="10"/>
+<rect x="900" y="230" width="240" height="260" rx="10"/><rect x="1190" y="120" width="300" height="200" rx="10"/>
+<rect x="620" y="500" width="230" height="230" rx="10"/><rect x="900" y="530" width="200" height="200" rx="10"/>
+<rect x="1160" y="420" width="180" height="160" rx="10"/><rect x="1380" y="360" width="200" height="300" rx="10"/>
+<rect x="400" y="580" width="180" height="200" rx="10"/><rect x="640" y="780" width="260" height="180" rx="10"/>
+<rect x="960" y="780" width="220" height="170" rx="10"/><rect x="1240" y="640" width="240" height="180" rx="10"/>
+</g>
+<!-- 河 -->
+<path d="M340 760 q240 -70 420 10 q200 90 420 -10 q220 -100 420 0" stroke="#CFE0E6" stroke-width="46" fill="none"/>
+<path d="M340 760 q240 -70 420 10 q200 90 420 -10 q220 -100 420 0" stroke="#DDEBEF" stroke-width="26" fill="none"/>
+<!-- 主干道 -->
+<g stroke="#FFFFFF" stroke-width="26" fill="none" stroke-linecap="round">
+<path d="M340 240 H1600"/><path d="M340 520 H1600"/><path d="M560 0 V1000"/><path d="M880 0 V1000"/><path d="M1240 0 V1000"/></g>
+<g stroke="#FFFFFF" stroke-width="12" fill="none" stroke-linecap="round">
+<path d="M340 700 H1600"/><path d="M720 0 V1000"/><path d="M1080 0 V1000"/><path d="M1400 0 V1000"/><path d="M340 380 H1600"/><path d="M340 880 H1600"/></g>
+<g stroke="#E7E1D3" stroke-width="2" fill="none" opacity=".9">
+<path d="M340 240 H1600"/><path d="M340 520 H1600"/><path d="M560 0 V1000"/><path d="M880 0 V1000"/><path d="M1240 0 V1000"/></g>
+
+<!-- 半径聚焦 -->
+<circle cx="880" cy="420" r="150" fill="#2E6BE6" opacity=".07"/>
+<circle cx="880" cy="420" r="150" fill="none" stroke="#2E6BE6" stroke-width="2" stroke-dasharray="8 8" opacity=".45"/>
+
+<!-- 点位 -->
+<g>
+  <rect x="596" y="196" width="34" height="34" rx="6" fill="#9AA5B1"/>
+  <rect x="816" y="286" width="34" height="34" rx="6" fill="#2E6BE6"/>
+  <rect x="1046" y="186" width="34" height="34" rx="6" fill="#E0A32E"/>
+  <circle cx="700" cy="600" r="17" fill="#9AA5B1"/>
+  <circle cx="1006" cy="606" r="17" fill="#2E6BE6"/>
+  <circle cx="1300" cy="300" r="17" fill="#D9534F"/>
+  <path d="M1246 616 l18 -30 l18 30 z" fill="#E0A32E"/>
+  <path d="M470 470 l18 -30 l18 30 z" fill="#9AA5B1"/>
+  <path d="M1410 760 l18 -30 l18 30 z" fill="#D9534F"/>
+  <rect x="936" y="800" width="34" height="34" rx="6" fill="#2E6BE6"/>
+</g>
+<g font-size="16" fill="#5B6068" font-family="Menlo, monospace">
+  <text x="640" y="218">P-01</text><text x="860" y="308">P-02</text><text x="1090" y="208">P-03</text>
+  <text x="722" y="606">P-04</text><text x="1028" y="612">P-05</text><text x="1322" y="306">P-06</text>
+  <text x="1268" y="632">P-07</text><text x="492" y="486">P-08</text><text x="1432" y="776">P-09</text>
+  <text x="978" y="822">P-10</text>
+</g>
+
+<!-- 侧栏 -->
+<rect x="0" y="0" width="340" height="1000" fill="#FCFBF8"/>
+<line x1="340" y1="0" x2="340" y2="1000" stroke="#E4DED2" stroke-width="2"/>
+<text x="28" y="58" font-size="26" font-weight="700" fill="#1F2328">司南 · 点位</text>
+<text x="28" y="88" font-size="15" fill="#8A8478">示意界面 · 数据为虚构</text>
+<g font-size="15">
+  <rect x="28" y="112" width="80" height="34" rx="17" fill="#2E6BE6"/><text x="46" y="134" fill="#fff">全部 24</text>
+  <rect x="118" y="112" width="86" height="34" rx="17" fill="#F0EDE5"/><text x="132" y="134" fill="#6C737C">未接触 9</text>
+  <rect x="214" y="112" width="86" height="34" rx="17" fill="#F0EDE5"/><text x="226" y="134" fill="#6C737C">有进展 6</text>
+</g>
+<g font-size="15" fill="#5B6068">
+  <rect x="28" y="176" width="284" height="72" rx="10" fill="#F7F5EF"/>
+  <rect x="40" y="196" width="16" height="16" rx="3" fill="#2E6BE6"/><text x="68" y="210">P-02 · 已接触 3 次</text>
+  <text x="68" y="232" font-size="13" fill="#9A948A">最近：6 月 12 日 · 留资 2</text>
+
+  <rect x="28" y="260" width="284" height="72" rx="10" fill="#F7F5EF"/>
+  <rect x="40" y="280" width="16" height="16" rx="3" fill="#E0A32E"/><text x="68" y="294">P-03 · 有进展</text>
+  <text x="68" y="316" font-size="13" fill="#9A948A">最近：6 月 12 日 · 约到访 1</text>
+
+  <rect x="28" y="344" width="284" height="72" rx="10" fill="#F7F5EF"/>
+  <rect x="40" y="364" width="16" height="16" rx="3" fill="#D9534F"/><text x="68" y="378">P-06 · 重点跟进</text>
+  <text x="68" y="400" font-size="13" fill="#9A948A">最近：6 月 11 日 · 待二次</text>
+
+  <rect x="28" y="428" width="284" height="72" rx="10" fill="#F7F5EF"/>
+  <rect x="40" y="448" width="16" height="16" rx="3" fill="#9AA5B1"/><text x="68" y="462">P-04 · 未接触</text>
+  <text x="68" y="484" font-size="13" fill="#9A948A">分配：张三（示意）</text>
+</g>
+<g font-size="14" fill="#8A8478">
+  <text x="28" y="556">每人进度</text>
+  <rect x="28" y="572" width="284" height="8" rx="4" fill="#EDE8DC"/><rect x="28" y="572" width="182" height="8" rx="4" fill="#2E6BE6"/>
+  <text x="28" y="600" font-size="13">本月目标 20 · 已完成 13</text>
+</g>
+<g font-size="13" fill="#9A948A">
+  <text x="28" y="660">颜色＝状态　形状＝类型</text>
+  <text x="28" y="684">方形 门店　圆形 社区　三角 商圈</text>
+  <text x="28" y="708">点到点距离按直线计算</text>
+</g>
+
+<!-- 比例尺与缩放 -->
+<g><rect x="1420" y="930" width="120" height="6" rx="3" fill="#8A8478"/><text x="1420" y="956" font-size="14" fill="#8A8478">2 km</text></g>
+<g><rect x="1480" y="820" width="40" height="40" rx="8" fill="#FCFBF8" stroke="#D7D1C5"/><text x="1494" y="848" font-size="22" fill="#5B6068">+</text>
+<rect x="1480" y="866" width="40" height="40" rx="8" fill="#FCFBF8" stroke="#D7D1C5"/><text x="1496" y="894" font-size="24" fill="#5B6068">−</text></g>
+</svg>
+<div class="badge">示意界面｜点位与名称均为虚构</div>
+</div>
+</body></html>

@@ -1,0 +1,114 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+html,body{margin:0;background:#F4F1EC;font-family:"PingFang SC","Helvetica Neue",sans-serif;}
+.stage{width:1600px;height:900px;position:relative;overflow:hidden;background:#F4F1EC;}
+.cap{position:absolute;left:64px;bottom:40px;font-size:26px;color:#4a4f57;}
+.cap b{color:#1f2328;font-weight:600;}
+</style></head><body>
+<div class="stage">
+<svg width="1600" height="900" viewBox="0 0 1600 900">
+  <rect x="0" y="0" width="1600" height="628" fill="#EFEBE3"/>
+  <rect x="0" y="628" width="1600" height="272" fill="#E4DFD5"/>
+  <line x1="0" y1="628" x2="1600" y2="628" stroke="#D8D2C6" stroke-width="2"/>
+
+  <!-- whiteboard -->
+  <rect x="96" y="64" width="430" height="248" rx="6" fill="#FBFAF7" stroke="#CFC9BE" stroke-width="3"/>
+  <line x1="126" y1="112" x2="330" y2="112" stroke="#DCD6CB" stroke-width="9" stroke-linecap="round"/>
+  <line x1="126" y1="150" x2="286" y2="150" stroke="#DCD6CB" stroke-width="9" stroke-linecap="round"/>
+  <g font-size="30" fill="#9C968B"><text x="130" y="240">到访</text><text x="242" y="240">成交</text></g>
+  <g stroke="#C0553F" stroke-width="4" fill="none" opacity=".8">
+    <ellipse cx="178" cy="228" rx="46" ry="26"/><ellipse cx="284" cy="228" rx="46" ry="26"/>
+    <line x1="136" y1="196" x2="322" y2="262"/><line x1="322" y1="196" x2="136" y2="262"/>
+  </g>
+
+  <!-- clock -->
+  <circle cx="1120" cy="118" r="38" fill="#FBFAF7" stroke="#CFC9BE" stroke-width="3"/>
+  <line x1="1120" y1="118" x2="1120" y2="94" stroke="#7d838c" stroke-width="4" stroke-linecap="round"/>
+  <line x1="1120" y1="118" x2="1142" y2="130" stroke="#7d838c" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- speaker behind podium (left front) -->
+  <ellipse cx="300" cy="700" rx="120" ry="14" fill="#D9D3C7"/>
+  <g>
+    <circle cx="300" cy="404" r="32" fill="#C0553F"/>
+    <path d="M256 548 q44 -104 88 0 z" fill="#C0553F"/>
+    <path d="M340 462 l66 -30" stroke="#C0553F" stroke-width="15" stroke-linecap="round"/>
+    <path d="M258 470 l-54 -22" stroke="#C0553F" stroke-width="15" stroke-linecap="round"/>
+    <g stroke="#C0553F" stroke-width="4" fill="none" opacity=".5">
+      <path d="M392 420 q30 -18 44 -52"/><path d="M414 446 q38 -14 62 -50"/>
+    </g>
+    <text x="452" y="386" font-size="34" fill="#C0553F" opacity=".85">!</text>
+    <text x="478" y="424" font-size="30" fill="#C0553F" opacity=".7">!</text>
+  </g>
+  <!-- podium -->
+  <rect x="196" y="552" width="212" height="112" rx="4" fill="#C7C0B2"/>
+  <rect x="186" y="540" width="232" height="16" rx="6" fill="#B9B2A4"/>
+
+  <!-- table -->
+  <rect x="520" y="648" width="810" height="24" rx="12" fill="#C9C2B4"/>
+  <rect x="560" y="672" width="16" height="120" fill="#BDB6A7"/>
+  <rect x="1270" y="672" width="16" height="120" fill="#BDB6A7"/>
+
+  <!-- seat A sleeping on table -->
+  <g>
+    <ellipse cx="628" cy="700" rx="62" ry="10" fill="#DCD6CA"/>
+    <circle cx="612" cy="560" r="27" fill="#9AA5B1"/>
+    <path d="M578 646 q34 -56 68 0 z" fill="#9AA5B1"/>
+    <path d="M640 570 q22 6 34 40" stroke="#9AA5B1" stroke-width="14" stroke-linecap="round" fill="none"/>
+    <text x="654" y="524" font-size="28" fill="#8A929C">z</text><text x="680" y="496" font-size="22" fill="#8A929C">z</text>
+  </g>
+
+  <!-- seat B phone -->
+  <g>
+    <ellipse cx="772" cy="700" rx="56" ry="10" fill="#DCD6CA"/>
+    <circle cx="762" cy="556" r="27" fill="#8A97A6"/>
+    <path d="M730 646 q32 -54 64 0 z" fill="#8A97A6"/>
+    <rect x="796" y="566" width="30" height="50" rx="5" fill="#2E6BE6" opacity=".9"/>
+    <rect x="790" y="560" width="30" height="50" rx="5" fill="#BFD2F5" opacity=".45"/>
+  </g>
+
+  <!-- seat C + D talking -->
+  <g>
+    <ellipse cx="912" cy="700" rx="54" ry="10" fill="#DCD6CA"/>
+    <circle cx="922" cy="556" r="27" fill="#A6AEB8"/>
+    <path d="M890 646 q32 -54 64 0 z" fill="#A6AEB8"/>
+    <ellipse cx="1042" cy="700" rx="54" ry="10" fill="#DCD6CA"/>
+    <circle cx="1030" cy="556" r="27" fill="#A6AEB8"/>
+    <path d="M998 646 q32 -54 64 0 z" fill="#A6AEB8"/>
+    <g fill="#FBFAF7" stroke="#CFC9BE" stroke-width="2">
+      <rect x="936" y="474" width="62" height="36" rx="9"/><rect x="1000" y="474" width="62" height="36" rx="9"/>
+    </g>
+    <g fill="#9C968B"><circle cx="956" cy="492" r="4"/><circle cx="968" cy="492" r="4"/><circle cx="1020" cy="492" r="4"/><circle cx="1032" cy="492" r="4"/></g>
+  </g>
+
+  <!-- seat E blank stare -->
+  <g>
+    <ellipse cx="1168" cy="700" rx="54" ry="10" fill="#DCD6CA"/>
+    <circle cx="1160" cy="556" r="27" fill="#9AA5B1"/>
+    <path d="M1128 646 q32 -54 64 0 z" fill="#9AA5B1"/>
+    <line x1="1149" y1="552" x2="1156" y2="552" stroke="#6F7883" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="1165" y1="552" x2="1172" y2="552" stroke="#6F7783" stroke-width="3.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- papers -->
+  <rect x="690" y="638" width="72" height="9" rx="3" fill="#FBFAF7" stroke="#DCD6CB"/>
+  <rect x="1096" y="640" width="64" height="8" rx="3" fill="#FBFAF7" stroke="#DCD6CB"/>
+
+  <!-- door -->
+  <rect x="1380" y="300" width="150" height="328" rx="5" fill="#E7E2D8" stroke="#D6D0C4" stroke-width="3"/>
+  <circle cx="1512" cy="470" r="6" fill="#C9C2B4"/>
+
+  <!-- manager at door, watching -->
+  <ellipse cx="1390" cy="700" rx="72" ry="12" fill="#D9D3C7"/>
+  <g>
+    <circle cx="1392" cy="424" r="32" fill="#2E6BE6"/>
+    <path d="M1340 562 q52 -118 104 0 z" fill="#2E6BE6"/>
+    <rect x="1336" y="470" width="30" height="80" rx="6" fill="#FBFAF7" stroke="#B9C6E8" stroke-width="2"/>
+    <rect x="1345" y="482" width="13" height="4" rx="2" fill="#C9D3EA"/>
+    <rect x="1345" y="494" width="13" height="4" rx="2" fill="#C9D3EA"/>
+    <rect x="1345" y="506" width="9" height="4" rx="2" fill="#C9D3EA"/>
+  </g>
+  <path d="M1362 424 q-120 30 -230 60" stroke="#2E6BE6" stroke-width="3" stroke-dasharray="9 11" fill="none" opacity=".45"/>
+</svg>
+<div class="cap"><b>第一次团队会</b>：讲的很多，听的很少。管理者站在门边，没说话。</div>
+</div>
+</body></html>
